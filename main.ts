@@ -1,7 +1,1 @@
-basic.showLeds(`
-    . . . . .
-    . # . # .
-    . . . . .
-    # . . . #
-    . # # # .
-    `);
+https://github.com/sparkfun/pxt-gator-soil 
