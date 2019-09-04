@@ -1,21 +1,14 @@
-# soil-moisture-calibration
+# Soil Moisture Sensor Calibration
 
+## Introduction 
+Create a program that can calibrate the soil moisture sensor. ``||basic: Show||`` the ``||gatorSoil:soil moisture||`` on the micro:bit. Hint: to make the results easier to understand, ``||Math: multiply||`` the value returned by the sensor by 100 to get the percentage soil moisture. You can also ``||Math: round||`` the value to make it easier to read. After you think you've figured it out, ``|Download|`` the code and test it out. 
 
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) * 100))
+})
+```
 
-## TODO
-
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] On GitHub, create a new file named LICENSE. Select the MIT License template.
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
-
-Read more at https://makecode.microbit.org/extensions
-
-## Supported targets
-
-* for PXT/microbit
-(The metadata above is needed for package search.)
-
+```package
+gatorSoil=github:sparkfun/pxt-gator-soil
+```
